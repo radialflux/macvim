@@ -377,7 +377,6 @@
 		29B97314FDCFA39411CA2CEA /* MacVim */ = {
 			isa = PBXGroup;
 			children = (
-				3780186919B2427700C26D08 /* MacVim.xcassets */,
 				1D493D640C52482B00AB718C /* Executables */,
 				080E96DDFE201D6D7F000001 /* MacVim Source */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -391,6 +390,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3780186919B2427700C26D08 /* MacVim.xcassets */,
 				1D384A0D100D671700D3C22F /* KeyBinding.plist */,
 				1D9C602E0EF79C0C0034AD44 /* MacVim.icns */,
 				1D8BEA73104992290069B072 /* FindAndReplace.nib */,
