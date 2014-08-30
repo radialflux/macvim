@@ -277,6 +277,7 @@ NSString *MMNativeFullScreenKey         = @"MMNativeFullScreen";
 {
     NSWindow *win = [self window];
     return [win convertBaseToScreen:[self convertPoint:point toView:nil]];
+
 }
 
 // Convert to view coordinate from screen coordinate

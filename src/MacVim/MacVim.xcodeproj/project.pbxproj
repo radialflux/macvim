@@ -91,6 +91,13 @@
 			remoteGlobalIDString = 53DF68FC067E5B5A0090B5B0;
 			remoteInfo = PSMTabBarControlFramework;
 		};
+		3718954D19B2564F0036AE1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371894C819B256400036AE1C /* MMTabBarView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06DB23A61609F5830071BDA0;
+			remoteInfo = MMTabBarView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -214,6 +221,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* MacVim_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacVim_Prefix.pch; sourceTree = "<group>"; };
+		371894C819B256400036AE1C /* MMTabBarView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MMTabBarView.xcodeproj; path = MMTabBarView/MMTabBarView.xcodeproj; sourceTree = "<group>"; };
 		3780186919B2427700C26D08 /* MacVim.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MacVim.xcassets; sourceTree = "<group>"; };
 		51D1D92F1350AE1900323896 /* MMFileBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMFileBrowserController.h; sourceTree = "<group>"; };
 		51D1D9301350AE1900323896 /* MMFileBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFileBrowserController.m; sourceTree = "<group>"; };
@@ -414,12 +422,21 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1D8B5A52104AF9FF002E59D5 /* Carbon.framework */,
 				1D493DB30C52533B00AB718C /* PSMTabBarControl.xcodeproj */,
+				371894C819B256400036AE1C /* MMTabBarView.xcodeproj */,
+				1D8B5A52104AF9FF002E59D5 /* Carbon.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3718954A19B2564F0036AE1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3718954E19B2564F0036AE1C /* MMTabBarView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		51D410E81615018B008CAF15 /* MMFileBrowser */ = {
@@ -481,10 +498,15 @@
 				French,
 				German,
 				Swedish,
+				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* MacVim */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 3718954A19B2564F0036AE1C /* Products */;
+					ProjectRef = 371894C819B256400036AE1C /* MMTabBarView.xcodeproj */;
+				},
 				{
 					ProductGroup = 1D493DB40C52533B00AB718C /* Products */;
 					ProjectRef = 1D493DB30C52533B00AB718C /* PSMTabBarControl.xcodeproj */;
@@ -503,6 +525,13 @@
 			fileType = wrapper.framework;
 			path = PSMTabBarControl.framework;
 			remoteRef = 1D493DB80C52533B00AB718C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3718954E19B2564F0036AE1C /* MMTabBarView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MMTabBarView.framework;
+			remoteRef = 3718954D19B2564F0036AE1C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
