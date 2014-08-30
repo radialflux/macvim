@@ -96,7 +96,6 @@
 		0259C57FFE90428111CA0C5A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PSMTabBarControlInspector.nib; sourceTree = "<group>"; };
 		0259C581FE90428111CA0C5A /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PSMTabBarControlPalette.nib; sourceTree = "<group>"; };
 		0259C583FE90428111CA0C5A /* palette.table */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = palette.table; sourceTree = "<group>"; };
-		13EB9DBD07DE0F1E00EB933A /* InterfaceBuilder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilder.framework; path = /System/Library/Frameworks/InterfaceBuilder.framework; sourceTree = "<absolute>"; };
 		13F8B88807B434F6008AE28D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		13F8B88A07B434F6008AE28D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32DBCF980370C29C00C91783 /* PSMTabBarControl_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSMTabBarControl_Prefix.pch; path = source/PSMTabBarControl_Prefix.pch; sourceTree = "<group>"; };
@@ -230,7 +229,6 @@
 		13F8B6FD07B43410008AE28D /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				13EB9DBD07DE0F1E00EB933A /* InterfaceBuilder.framework */,
 				DD92D38A0106425D02CA0E72 /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
