@@ -65,6 +65,7 @@
 		1DE9B9500D341AB8008FEDD4 /* MMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE9B94E0D341AB8008FEDD4 /* MMWindow.m */; };
 		1DED78600C6DE43D0079945F /* vimrc in Copy Vim Runtime Files */ = {isa = PBXBuildFile; fileRef = 1DED785F0C6DE43D0079945F /* vimrc */; };
 		1DFE25A50C527BC4003000F7 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D493DB90C52533B00AB718C /* PSMTabBarControl.framework */; };
+		371B1ED819C4B2E6006E031A /* MacVim.icns in Resources */ = {isa = PBXBuildFile; fileRef = 371B1ED719C4B2E6006E031A /* MacVim.icns */; };
 		3780186A19B2427700C26D08 /* MacVim.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3780186919B2427700C26D08 /* MacVim.xcassets */; };
 		51D1D9321350AE1900323896 /* MMFileBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D1D9301350AE1900323896 /* MMFileBrowserController.m */; };
 		51D1D93E135120FF00323896 /* MMFileBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D1D93D135120FF00323896 /* MMFileBrowserCell.m */; };
@@ -214,6 +215,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* MacVim_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacVim_Prefix.pch; sourceTree = "<group>"; };
+		371B1ED719C4B2E6006E031A /* MacVim.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = MacVim.icns; path = icons/MacVim.icns; sourceTree = "<group>"; };
 		3780186919B2427700C26D08 /* MacVim.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MacVim.xcassets; sourceTree = "<group>"; };
 		51D1D92F1350AE1900323896 /* MMFileBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMFileBrowserController.h; sourceTree = "<group>"; };
 		51D1D9301350AE1900323896 /* MMFileBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFileBrowserController.m; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 		29B97314FDCFA39411CA2CEA /* MacVim */ = {
 			isa = PBXGroup;
 			children = (
+				371B1ED719C4B2E6006E031A /* MacVim.icns */,
 				1D493D640C52482B00AB718C /* Executables */,
 				080E96DDFE201D6D7F000001 /* MacVim Source */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -523,6 +526,7 @@
 				1DD3D51E0D82D4C9006E4320 /* ibeam.png in Resources */,
 				1D22374B0E45DF4800E6FFFF /* Advanced.png in Resources */,
 				1DCD00BF0E50B2B700460166 /* Attention.png in Resources */,
+				371B1ED819C4B2E6006E031A /* MacVim.icns in Resources */,
 				1DCD00C00E50B2B700460166 /* Copy.png in Resources */,
 				1DCD00C10E50B2B700460166 /* Cut.png in Resources */,
 				1DCD00C20E50B2B700460166 /* FindHelp.png in Resources */,
@@ -566,7 +570,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Clear deployment target, else the python script always thinks we're building on Tiger\nunset MACOSX_DEPLOYMENT_TARGET\n\n# Generate the icons (redirect stderr to ignore warnings)\ncd \"$PROJECT_DIR\"/icons/\nmake OUTDIR=\"$TARGET_BUILD_DIR\"/$UNLOCALIZED_RESOURCES_FOLDER_PATH 2> /dev/null\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
