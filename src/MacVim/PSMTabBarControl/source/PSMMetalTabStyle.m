@@ -388,7 +388,7 @@ void MyNSDrawWindowBackground(NSRect rect)
         NSRect closeButtonRect = [cell closeButtonRectForFrame:cellFrame];
         NSImage * closeButton = nil;
         
-        closeButton = metalCloseButton;
+        closeButton = nil;
         if ([cell closeButtonOver]) closeButton = metalCloseButtonOver;
         if ([cell closeButtonPressed]) closeButton = metalCloseButtonDown;
         
@@ -396,9 +396,7 @@ void MyNSDrawWindowBackground(NSRect rect)
         [closeButton setFlipped:YES];
         [closeButton drawAtPoint:closeButtonRect.origin fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
         
-        // scoot label over
-        labelPosition += closeButtonSize.width + kPSMTabBarCellPadding;
-    }
+         }
 
 #if 0   // MacVim: disable this code.  It is unused and calling 'content' on the represented object's identifier seems dangerous at best.
     // icon
