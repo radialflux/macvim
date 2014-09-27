@@ -192,10 +192,10 @@ fsEventCallback(ConstFSEventStreamRef streamRef,
     
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:
         [NSNumber numberWithBool:NO],   MMNoWindowKey,
-        [NSNumber numberWithInt:64],    MMTabMinWidthKey,
+        [NSNumber numberWithInt:250],    MMTabMinWidthKey,
         [NSNumber numberWithInt:6*64],  MMTabMaxWidthKey,
-        [NSNumber numberWithInt:132],   MMTabOptimumWidthKey,
-        [NSNumber numberWithBool:YES],  MMShowAddTabButtonKey,
+        [NSNumber numberWithInt:250],   MMTabOptimumWidthKey,
+        [NSNumber numberWithBool:NO],  MMShowAddTabButtonKey,
         [NSNumber numberWithInt:2],     MMTextInsetLeftKey,
         [NSNumber numberWithInt:1],     MMTextInsetRightKey,
         [NSNumber numberWithInt:1],     MMTextInsetTopKey,
