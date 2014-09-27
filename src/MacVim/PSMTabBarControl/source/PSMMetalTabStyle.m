@@ -12,6 +12,7 @@
 
 #define kPSMMetalObjectCounterRadius 7.0
 #define kPSMMetalCounterMinWidth 20
+#define kPSMMetalCornerRadius 4.5f
 
 // NSDrawWindowBackground() is broken for borderless windows, see
 // http://lists.apple.com/archives/cocoa-dev/2006/Feb/msg00130.html
@@ -44,9 +45,6 @@ void MyNSDrawWindowBackground(NSRect rect)
         metalCloseButtonDown = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForImageResource:@"TabClose_Front_Pressed"]];
         metalCloseButtonOver = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForImageResource:@"TabClose_Front_Rollover"]];
         
-        _addTabButtonImage = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForImageResource:@"TabNewMetal"]];
-        _addTabButtonPressedImage = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForImageResource:@"TabNewMetalPressed"]];
-        _addTabButtonRolloverImage = [[NSImage alloc] initByReferencingFile:[[PSMTabBarControl bundle] pathForImageResource:@"TabNewMetalRollover"]];
     }
     return self;
 }

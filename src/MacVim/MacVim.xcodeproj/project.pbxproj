@@ -65,6 +65,7 @@
 		1DE9B9500D341AB8008FEDD4 /* MMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE9B94E0D341AB8008FEDD4 /* MMWindow.m */; };
 		1DED78600C6DE43D0079945F /* vimrc in Copy Vim Runtime Files */ = {isa = PBXBuildFile; fileRef = 1DED785F0C6DE43D0079945F /* vimrc */; };
 		1DFE25A50C527BC4003000F7 /* PSMTabBarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D493DB90C52533B00AB718C /* PSMTabBarControl.framework */; };
+		375137EB19D642DF00699B4A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375137EA19D642DF00699B4A /* Media.xcassets */; };
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
@@ -209,6 +210,7 @@
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* MacVim_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacVim_Prefix.pch; sourceTree = "<group>"; };
+		375137EA19D642DF00699B4A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* MacVim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacVim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -391,6 +393,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DE3F8E50D50F80500052B9E /* Preferences.nib */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
+				375137EA19D642DF00699B4A /* Media.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -437,6 +440,8 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MacVim" */;
 			compatibilityVersion = "Xcode 2.4";
 			developmentRegion = English;
@@ -508,6 +513,7 @@
 				1DCD00D00E50B2B700460166 /* SaveAll.png in Resources */,
 				1DCD00D10E50B2B700460166 /* SaveSesn.png in Resources */,
 				1DCD00D20E50B2B700460166 /* TagJump.png in Resources */,
+				375137EB19D642DF00699B4A /* Media.xcassets in Resources */,
 				1DCD00D30E50B2B700460166 /* Undo.png in Resources */,
 				1D8BEA74104992290069B072 /* FindAndReplace.nib in Resources */,
 				1D9C60520EF79C0C0034AD44 /* MacVim.icns in Resources */,
@@ -613,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 73;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -644,6 +651,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 73;
 				FRAMEWORK_SEARCH_PATHS = (
